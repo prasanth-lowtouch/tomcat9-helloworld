@@ -1,7 +1,7 @@
 app:
   name: Tomcat Loadgen
   code: TCLG
-  notify: appzdev@cloudbourne.co
+  notify: prrajan@cloudbourne.co
 
 build:
   version: 0.3
@@ -11,7 +11,7 @@ build:
   image_template: tomcat9
 
 deploy:
-  context: alpha/DEV
+  context: prasanth-lowtouch/DEV
   replicas: 2
   port: 
    - 8080
@@ -25,4 +25,4 @@ properties:
   next: 15
   download: false
   random : true
-  nano : 83
+  nano : 84
